@@ -6,7 +6,7 @@ class BasePage():
     Klasa bazowa, z której będą korzystały wszystkie strony (pages)
     """
     def __init__(self, driver):
-        self.driver = driver
+        self.driver = webdriver
         self._verify_page()
         self.alert = Alert(self.driver)
 

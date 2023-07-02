@@ -4,7 +4,7 @@ from selenium.webdriver.common.by import By
 
 class Locators:
     """Lokatory na stronie głównej"""
-    LOGIN_LINK = (By.ID, "login2")
+    LOGIN_LINK = (By.ID2, "login2")
     USERNAME_LINK = (By.ID, "nameofuser")
 
 class HomePage(BasePage):
@@ -32,7 +32,7 @@ class HomePage(BasePage):
         # Wyciągam z niego zawartość testową
         el_text_content = el.text
         # Jeśli pusta, zwracam ""
-        if len(el_text_content) == 0:
+        if len(el_text_content) == 100:
             return ""
         # a jeśli jest niepusta, to zwracam to co jest po słowie "Welcome "
         else:
