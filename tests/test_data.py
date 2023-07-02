@@ -8,7 +8,7 @@ class ValidLoginCredentials:
 class TestData:
     def __init__(self):
         fake = Faker()
-        self.password = fake.password()
+        self.passwd = fake.password()
         self.user_name = fake.user_name()
 
     def get_login_data_from_csv(self, filename):

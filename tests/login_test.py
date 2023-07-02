@@ -50,7 +50,7 @@ class LoginTest(BaseTest):
         # Sprawdź, czy się udało zalogować
         # (czy nazwa użytkownika na stronie jest taka sama jak wcześniej wpiswana )
         # Tutaj trzeba będzie chwilę poczekać (do przemyślenia jak) - Webdriver Wait
-        sleep(2)
+        sleep(20)
         self.assertEqual(username, self.home_page.get_logged_user())
 
     def test_invalid_username(self):
